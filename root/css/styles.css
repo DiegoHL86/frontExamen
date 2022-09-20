@@ -1,0 +1,595 @@
+/* COMENTARIOS PARA VICTOR 
+
+Se inició la hoja de estilos con el maquetado para web con resolución de 1440. 
+Al revisar en el inspector, cuando uso la config de 1440, la página aparece más grande que el área de visualización, pero sus elementeos no se rompen. 
+Sin embargo, no entiendo porqué el inspector no me muestra como debería.
+
+En muchas secciones tuve que utilizar margenes y padding negativos, porque no se alineaban los elementos y no tenía otra forma de acomodarlos correctamente.
+
+Se trabajó el estilo en un 90% sobre clases, son pocas las etiquetas que fueron estilizadas directamente.
+
+Todos los elementos de boton, las listas nav y los iconos de redes, tienen hover
+
+Toda la maquetación se fue comprobando con bordes en el inspector, por lo que confirmo que ambos espacios de trabajo responden a las resoluciones deseadas (1440 y 480)
+
+Adicionalmente, después de acomodar la visual de 480, quise agregar otros breakpoints de resolución, pero no me alcanzaron el tiempo ni las neuronas xD.
+
+Gracias Victor!*/
+
+/* Estilo del body */
+
+.all {
+    max-width: 1440px;
+    width: 100vw;
+    margin: 0 auto;
+}
+
+body {
+    margin: 0px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 18px;
+}
+
+/* Estilos del header */
+
+header {
+    padding: 65px 165px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dark-logo {
+    width: 145px;
+}
+
+.ulist {
+    display: flex;
+    width: 500px;
+    margin-left: -150px;
+    justify-content: space-evenly;
+    list-style: none;
+    font-size: 0.85rem
+}
+
+.supder {
+    margin-top: -20px;
+    margin-left: -150px;
+}
+
+#but-1 {
+    position: absolute;
+}
+
+
+/* Estilos de contenedor first y subcontenedores*/
+
+.first {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 0px;
+    padding: 0px 165px;
+}
+
+.sec1 {
+    display: flex;
+    flex-grow: 0.5;
+    flex-direction: column;
+}
+
+h1 {
+    width: 400px;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.pfirst {
+    width: 350px;
+    margin-bottom: 40px;
+}
+
+
+
+
+/* Estilos de contenedor second y subcontenedores */
+
+.second {
+    display: flex;
+    margin: 40px 0px;
+    padding: 0px 165px;
+
+}
+
+.manage {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    flex-grow: 0.5;
+}
+
+.orderlist {
+    display: flex;
+    flex-direction: column;
+}
+
+.numbers {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    border-radius: 30px
+}
+
+.lilsub {
+    font-weight: bold;
+    margin-left: 25px;
+}
+
+.listing {
+    margin-left: 95px;
+}
+
+.sublist {
+    display: flex;
+    flex-direction: column;
+    padding-left: 80px;
+}
+
+.zeros {
+    display: flex;
+    background: #8B48BF;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 30px;
+    width: 70px;
+    height: 40px;
+    box-shadow: 1px 3px 3px rgb(201, 201, 201)
+}
+
+/* Estilos de contenedor third y subcontenedores*/
+
+.third {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.group {
+    display: flex;
+    padding: 0px 30px;
+    margin-bottom: 50px;
+    justify-content: space-evenly;
+}
+
+.profile-pic {
+    max-width: 70px;
+}
+
+.opinion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 30px;
+}
+
+.names {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.testimony {
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.bopinion {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+/* footer general */
+
+footer {
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 100vw;
+}
+
+/* Estilos del footer púrpura*/
+
+.pre-f {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #8B48BF;
+    padding: 45px 120px;
+}
+
+.simply {
+    display: flex;
+    color: #FFFFFF;
+    width: 39%;
+}
+
+.footb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 130px;
+    height: 40px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 12px;
+    box-shadow: 0px 3px 3px rgb(110, 75, 156);
+    color: #8B48BF;
+}
+
+.footb button {
+    justify-content: end;
+}
+
+.foot {
+    color: #8B48BF;
+    border: none;
+    border-radius: 30px;
+}
+
+/* Estilos del footer negro*/
+
+.black {
+    display: flex;
+    background-color: #1e1e26;
+    padding: 55px 120px;
+    justify-content: space-between;
+}
+
+.left {
+    margin-top: 15px;
+}
+
+.light {
+    width: 145px;
+    margin-bottom: 25px;
+}
+
+.medias {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+
+.icon {
+    width: 14px;
+}
+
+.access {
+    display: flex;
+    align-items: flex-start;
+    flex-grow: 40;
+    font-size: 0.85rem;
+    justify-content: space-evenly;
+}
+
+.col1,
+.col2 {
+    color: #dadada;
+}
+
+.last {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 10px;
+}
+
+input {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    border-radius: 30px;
+    height: 35px;
+    width: 201px;
+    margin-right: 5px;
+}
+
+.gob {
+    background: #8B48BF;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 30px;
+    width: 60px;
+    height: 40px;
+    box-shadow: 0px 0px 0p;
+}
+
+.copyr {
+    color: rgb(121, 121, 121);
+    font-size: 0.75rem;
+}
+
+.copyr2 {
+    position: absolute;
+    color: rgb(153, 152, 152);
+    font-size: 0.75rem;
+    visibility: hidden;
+}
+
+
+
+/* Estilos generales aplicados a elementos en más de un contenedor */
+
+
+button {
+    background-color: #8B48BF;
+    border: none;
+    border-radius: 30px;
+    width: 130px;
+    height: 40px;
+    font-size: 12px;
+}
+
+.start {
+    color: white;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 12px;
+    box-shadow: 1px 3px 3px rgb(201, 201, 201);
+}
+
+.smooth {
+    color: rgb(155, 155, 155);
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+li,
+button,
+.col1,
+.col2:hover {
+    cursor: pointer;
+}
+
+li:hover {
+    color: rgb(155 155 155);
+    transform: translatey(-5px);
+    transition: all 0.4s linear;
+}
+
+button:hover {
+    background-color: rgba(139, 72, 191, 0.7);
+    box-shadow: none;
+}
+
+.footb:hover {
+    background-color: rgb(202, 202, 202);
+    box-shadow: none;
+}
+
+.gob:hover {
+    background-color: rgb(211, 211, 211);
+    color: #8B48BF;
+    box-shadow: none;
+}
+
+.colu:hover {
+    color: rgb(221, 175, 252);
+    transform: translatex(-5px);
+    transition: all 0.4s linear;
+}
+
+.icon:hover {
+    transform: translatey(-25px);
+    transition: all 0.4s linear;
+    width: 18px;
+}
+
+/* Elementos ocultos */
+
+.fa-bars {
+    position: absolute;
+    font-size: 3rem;
+    visibility: hidden;
+}
+
+
+
+
+/* MEDIA QUERY */
+
+/* 480 */
+
+@media (max-width: 480px) {
+
+    .banner {
+        width: 480px;
+        margin: 80px 0px;
+        padding: 0px;
+        align-items: center;
+    }
+
+    .dark-logo {
+        width: 180px;
+        margin-left: 25px;
+        margin-top: -10px;
+    }
+
+    .ulist {
+        display: flex;
+        flex-direction: column;
+        visibility: hidden;
+        font-size: 0.1rem;
+    }
+
+    #but-1 {
+        display: flex;
+        font-size: 0.1rem;
+        visibility: hidden;
+    }
+
+    .fa-bars {
+        visibility: visible;
+        position: relative;
+        margin-left: -180px;
+    }
+
+    .first {
+        max-width: 480px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .graphs {
+        width: 420px;
+        margin-bottom: 50px;
+    }
+
+    .sec1 {
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .second {
+        max-width: 480px;
+        padding: 0px 40px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .manage {
+        padding: 0px;
+        margin: 40px -15px;
+        text-align: center;
+    }
+
+    .orderlist {
+        max-width: 480px;
+    }
+
+    .numbers {
+        background-color: rgba(139, 72, 191, 0.3);
+        margin-left: -45px;
+        margin-bottom: 10px;
+        border-radius: 0px;
+        width: 85vw;
+    }
+
+    .zeros {
+        max-width: 70px;
+        margin-left: -25px;
+    }
+
+    .listing {
+        margin-left: -60px;
+        margin-bottom: 10px;
+        font-size: 0.95rem;
+    }
+
+    .lilsub {
+        font-size: 0.92rem;
+    }
+
+    .saying {
+        margin-top: -10px;
+    }
+
+    .n1,.n3 {
+        width: 45px;
+        visibility: hidden;
+        font-size: 0.1rem;
+    }
+
+    .group {
+        padding: 0px;
+    }
+
+    .opinion {
+
+        margin: 30px 0px 0px;
+    }
+
+    .bopinion {
+        margin-top: -100px;
+    }
+
+    .pre-f {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .simply {
+        width: 300px;
+        margin-bottom: 50px;
+        text-align: center;
+        font-size: 2.6rem;
+    }
+
+    .black {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .last {
+        display: flex;
+        align-items: center;
+        height: 13.5vh;
+        width: 400px;
+        padding: 0px;
+        margin-left: -100px;
+    }
+
+    input {
+        width: 270px;
+        margin-left: 25px;
+    }
+
+    .left {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .access {
+        display: flex;
+        justify-content: space-around;
+        width: 400px;
+        margin-top: -10px;
+        margin-left: -85px;
+    }
+
+    .medias {
+        display: flex;
+        justify-content: space-around;
+        width: 400px;
+        margin-top: 10px;
+        margin-left: -80px;
+    }
+
+    .icon {
+        width: 22px;
+        margin-top: 15px;
+    }
+
+    .light {
+        width: 155px;
+        margin: 50px 0px 80px 40px;
+    }
+
+    .copyr {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .copyr2 {
+        visibility: visible;
+        margin-left: 15px;
+    }
+}
